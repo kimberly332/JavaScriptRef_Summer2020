@@ -1,19 +1,2 @@
-let person = {
-  name: "tervor",
-  role: "troll",
-  height: "180",
-  hair: "fabulous",
-  eyeColor: "blue",
-  textLabel: document.querySelector('p')
-}
-
-let car = {
-  wheels: 4,
-  make: "Honda",
-  model: "Pilot",
-  mileage: 400,
-  year: 2012,
-  fuel: 20
-}
-
-document.querySelector('p').textContent = `My name is ${person.name} and i am a ${person.role}`;
+//rotate and move elements with a class of "box" ("x" is a shortcut for a translateX() transform) over the course of 1 second.
+gsap.to(".box", {rotation: 150, scaleX: 1.5, scaleY: 2, x: 400, y: 300, duration: 2});
